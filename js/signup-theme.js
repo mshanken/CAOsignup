@@ -6,7 +6,7 @@ $(function () {
 		validClass: "success",
 		errorClass: "error",
 		errorElement:"em",
-		submitHandler: function() { form.submit(); },
+		submitHandler: function(form) { form.submit(); },
 		success: function(label, element){
 			// console.log( "test2: ", label, element );
 			var _this = $(element).parent();
