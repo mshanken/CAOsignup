@@ -1,7 +1,18 @@
 $(function () {
 	$("#CI_subscribeForm").validate({
+		ignore: '.ignore',
 		rules: {
-				CI_email:{email:true}
+				CI_email:{email:true},
+				hiddenRecaptcha: {
+                required: function () {
+                    $('.g-recaptcha').removeClass('hidden');
+                    if (grecaptcha.getResponse() == '') {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+            }
 		},
 		validClass: "success",
 		errorClass: "error",
