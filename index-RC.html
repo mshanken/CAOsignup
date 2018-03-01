@@ -111,7 +111,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div><!-- empaty column -->
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8"><br />
-                        <p class="text-center"><input id="CI_submit" name="CI_submit" type="submit" value="Submit" class="btn btnbig"></p>
+                        <p class="text-center"><input id="CI_submit" name="CI_submit" type="submit" value="Submit" class="btn btnbig" disabled></p>
                         <p class="text-center">By clicking Submit, I will receive a free email subscription to Cigar Watch,<br/>as well as special email promotions from Cigar Aficionado.</p>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div><!-- empaty column -->
@@ -136,5 +136,18 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/signup-theme2.js"></script>
+        <script>
+            var l_submit_confirmation_status = true;
+            var l_recaptcha_status = false;
+            function ciEnableSubmitButton(code) {
+            console.log(code);
+                if (code != '') {
+                    l_recaptcha_status = true;
+                    if (l_submit_confirmation_status && l_recaptcha_status) {
+                        document.getElementById('CI_submit').removeAttribute('disabled');
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
