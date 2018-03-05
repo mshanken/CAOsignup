@@ -6,10 +6,10 @@ $(function () {
 			hiddenRecaptcha: {
                 required: function () {
                 	// $('#CI_submit').removeAttribute('disabled');
-                    if (grecaptcha.getResponse() == '') {
-                        return true;
+                	if (grecaptcha.getResponse() == '') {
+                    	return true;
                     } else {
-                        return false;
+                    	return false;
                     }
                 }
             }
