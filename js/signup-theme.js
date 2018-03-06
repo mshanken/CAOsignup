@@ -2,17 +2,12 @@ $(function () {
 	$("#CI_subscribeForm").validate({
 		ignore: '.ignore',
 		rules: {
-				CI_email:{email:true},
-				hiddenRecaptcha: {
-                required: function () {
-                    $('.g-recaptcha').removeClass('hidden');
-                    if (grecaptcha.getResponse() == '') {
-                        return true;
-                    } else {
-                        return false;
-                    }
-                }
-            }
+			CI_email:{email:true}/*,
+			CI_custom7: {
+		        required: function(element) {
+		          	return $("#othersel").is(":selected");
+		        }
+		    }*/
 		},
 		validClass: "success",
 		errorClass: "error",
@@ -51,5 +46,15 @@ $(function () {
 			$("#CI_custom5").val(tmp);
 		}
 	}
+
+	// Adds an input field when other (type of industry select field) is selected
+	$("#CI_custom2").change( function(){
+		// console.log($(this).val());
+		if( $(this).val() === "Other" ){
+			$(".form-group.hide").removeClass("hide");
+		} else {
+			$('#CI_custom7').parent().addClass("hide");
+		}
+	} );
 
 });
