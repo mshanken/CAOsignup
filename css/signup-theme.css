@@ -43,6 +43,9 @@ h3 span { color: #9e0039; }
 .form-control-feedback {
   display: none;
 }
+.borderedimg{
+  border:3px solid #7B2E00;
+}
 .has-feedback label~.form-control-feedback {
   top: 37px;
 }
