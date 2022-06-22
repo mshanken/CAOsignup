@@ -122,10 +122,6 @@ dl {
   margin-bottom: 1rem;
 }
 
-small, .small {
-  font-size: 0.875em;
-}
-
 sub {
   position: relative;
   font-size: 0.75em;
@@ -278,6 +274,12 @@ iframe {
 
 .display-8 {
   font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-9 {
+  font-size: 0.9rem;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -844,6 +846,15 @@ iframe {
 .bg-orange {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-orange-rgb), var(--bs-bg-opacity)) !important;
+}
+
+@media (min-width: 576px) {
+  .d-sm-block {
+    display: block !important;
+  }
+  .d-sm-none {
+    display: none !important;
+  }
 }
 
 @media (min-width: 768px) {
