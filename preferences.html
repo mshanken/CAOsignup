@@ -10,8 +10,7 @@
         <title>Newsletter Prefenrences | Cigar Aficionado</title>
 
         <!-- Bootstrap -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/signup-theme.css">
+        <link rel="stylesheet" href="/assets/css/styles.css">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,10 +36,9 @@
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 lead">
-                    <h1>Cigar Aficionado&#39;s<br /><span>CIGAR WATCH</span><br />A Free e-Newsletter from the Cigar Experts</h1>
-                    <!-- <img src="images/CA_NW_SubPage15-CAO.jpg" class="img-responsive center-block addmarginbottom" /> -->
+           <div class="row bg-orange">
+                <div class="col">
+                    <img src="/assets/images/newsletter-sign-up-01.png" class="img-fluid mx-auto d-block" alt="Cigar Aficionado - Subscribe to our Newsletters" />
                 </div>
             </div><!-- /.row -->
             <form action="//portal.criticalimpact.com/procenter/procenter.cfm" name="CI_subscribeForm" id="CI_subscribeForm" method="get">
@@ -48,37 +46,21 @@
                 <input type="hidden" name="c" value="25682">
                 <input type="hidden" name="ext" value="1">
 
-                <div class="row row-one">
-                    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div><!-- empaty column -->
-                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                        <p>Please enter your email address below to manage your email notifications from CigarAficionado.com.</p>
-                        <div class="form-group">
-                            <label class="control-label" for="email">Email</label>
-                            <input type="email" name="email" class="form-control required" id="email" placeholder="Email" maxlength="150" />
-                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
-                            <span id="inputError2Status" class="sr-only">(error)</span>
-                        </div><!-- /.form-group -->
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
-                </div><!-- /.row -->
+                <div class="row justify-content-center">
+                <div class="col-8 my-6">
+                        <h3 class="fw-normal">Please enter your email address below to manage your email notifications from CigarAficionado.com.</h3>
+                        <br>
+                        <label class="form-label display-7" for="email"><strong>Email:</strong></label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Email" maxlength="150" required />
 
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div><!-- empaty column -->
-                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                         <hr />
-                        <p class="text-center"><input id="submit" name="submit" type="submit" value="Submit" class="btn btnbig"></p>
+
+                        <p class="text-center"><input id="submit" name="submit" type="submit" value="Submit" class="btn btnbs btn-primary text-white text-bold"></p>
                         <!-- <p class="text-center">By clicking Submit, I will receive a free email subscription to News Watch,<br/>as well as special email promotions from Cigar Aficionado.</p> -->
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div><!-- empaty column -->
                 </div><!-- /.row -->
+
             </form>
         </div><!-- /.container -->
-
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="js/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/signup-theme.js"></script>
     </body>
 </html>
