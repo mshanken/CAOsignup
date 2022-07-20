@@ -74,66 +74,66 @@
 
                 <div class="row mt-28">
                     <div class="col-md-6 align-self-center">
-                        <img src="/assets/images/newsletter-sign-up-02.jpg" class="img-fluid ms-28 w-95" alt="Man holding a cigar and a drink">
+                        <img src="/assets/images/newsletter-sign-up-02.jpg" class="img-fluid ms-md-28 w-100 w-md-95" alt="Man holding a cigar and a drink">
                     </div><!-- empaty column -->
-                    <div class="col-md-6">
-                        <h1 class="text-white text-center">SUBSCRIBE <br class="d-none d-md-block d-lg-none">TO <br class="d-md-none d-lg-block">OUR NEWSLETTERS</h1>
+                    <fieldset class="col-md-6" id="newslettersoptions">
+                        <h1 class="text-white text-center mt-3 mt-md-0">SUBSCRIBE <br class="d-none d-md-block d-lg-none">TO <br class="d-md-none d-lg-block">OUR NEWSLETTERS</h1>
                         <div class="form-check ps-2rem ps-md-6 pe-md-5 mt-28">
-                          <input class="form-check-input w-4 h-4 ms-n2rem mt-0" type="checkbox" name="CI_LID" value="2561596805,2561600817" id="cigarwatchcheck">
-                          <label class="text-white form-check-label display-7" for="cigarwatchcheck">
+                          <input class="form-check-input w-4 h-4 ms-n2rem mt-0" type="checkbox" name="CI_LID" value="2561596805,2561600817" id="2561596805,2561600817">
+                          <label class="text-white form-check-label display-7 fw-bold" for="cigarwatchcheck">
                             CIGAR WATCH
                           </label>
                           <p class="text-white display-8">Our curated weekly newsletter about <br class="d-md-none d-lg-block">cigars and the good life.</p>
                         </div>
                         <div class="form-check ps-2rem ps-md-6 pe-md-5 mt-28">
                           <input class="form-check-input w-4 h-4 ms-n2rem mt-0" type="checkbox" id="cigarreatingflashcheck" name="CI_LID" id="8109336243" value="8109336243">
-                          <label class="text-white form-check-label display-7" for="cigarreatingflashcheck">
+                          <label class="text-white form-check-label display-7 fw-bold" for="cigarreatingflashcheck">
                             CIGAR RATINGS FLASH<br>
                             <span class="text-pink display-8">NEW! Coming Fall 2022</span>
                           </label>
                           <p class="text-white display-8">Get the newest ratings straight from our <br class="d-md-none d-lg-block">tasting room to your inbox.</p>
                         </div>
-                    </div>
+                    </fieldset>
                 </div><!-- /.row -->
 
                 <div class="row justify-content-center mt-28">
-                	<div class="col-md-10">
-                		<div class="row">
-                			<div class="col">
-		                        <label class=" form-label text-white display-8" for="CI_email">Email</label>
-		                        <input type="email" name="CI_email" class="form-control" id="CI_email" placeholder="Email" maxlength="150" required />
-		                    </div><!-- /.form-group -->
-		                    <div class="col">
-		                        <label class=" form-label text-white display-8" for="CI_custom1">Zip/Postal<span class="d-none d-md-inline"> Code</span></label>
-		                        <input type="text" name="CI_custom1" class="form-control" id="CI_custom1" placeholder="Zip/Postal Code" maxlength="12"  required />
-		                    </div> <!-- /.form-group -->
-		                    <div class="col">
-		                        <label for="Industry" class=" text-white display-8">Industry</label>
-		                        <select name="CI_custom2" id="CI_custom2" class="ci_procenter_text_box ci_procenter_dropdown form-control" size="1">
-		                            <option selected value="">Please Select One</option>
-		                            <option value="Cigar Distributor">Cigar Distributor</option>
-		                            <option value="Cigar Manufacturer">Cigar Manufacturer</option>
-		                            <option value="Cigar Retailer">Cigar Retailer</option>
-		                            <option value="Importer">Importer</option>
-		                            <option value="Distiller">Distiller</option>
-		                            <option value="Winery">Winery</option>
-		                            <option value="Wine/Spirits Distributor">Wine/Spirits Distributor</option>
-		                            <option value="Beer Distributor">Beer Distributor</option>
-		                            <option value="Brewer">Brewer</option>
-		                            <option value="Restaurant">Restaurant</option>
-		                            <option value="Bar">Bar</option>
-		                            <option value="Hotel">Hotel</option>
-		                            <option value="Independent Retailer (Wine/Spirits/Beer)">Independent Retailer (Wine/Spirits/Beer)</option>
-		                            <option value="Chain Retailer (Wine/Spirits/Beer)">Chain Retailer (Wine/Spirits/Beer)</option>
-		                            <option value="Club (Private, Country)">Club (Private, Country)</option>
-		                            <option value="Duty Free Operator">Duty Free Operator</option>
-		                            <option value="Finance">Finance</option>
-		                            <option value="Media/PR">Media/PR</option>
-		                            <option value="consumer">Other</option>
-		                        </select>
-		                    </div><!-- /.form-group -->
-                		</div>
-                	</div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-12 col-md-4 mb-3">
+                                <label class="form-label text-white display-8" for="CI_email">EMAIL</label>
+                                <input type="email" name="CI_email" class="form-control" id="CI_email" placeholder="Email" maxlength="150" required />
+                            </div><!-- /.form-group -->
+                            <div class="col-12 col-md-4 mb-3">
+                                <label class=" form-label text-white display-8" for="CI_custom1">ZIP<span class="d-none d-md-inline"> CODE</span></label>
+                                <input type="text" name="CI_custom1" class="form-control" id="CI_custom1" placeholder="Zip/Postal Code" maxlength="12"  required />
+                            </div> <!-- /.form-group -->
+                            <div class="col-12 col-md-4 mb-3">
+                                <label for="Industry" class="form-label text-white display-8">INDUSTRY</label>
+                                <select name="CI_custom2" id="CI_custom2" class="ci_procenter_text_box ci_procenter_dropdown form-control" size="1">
+                                    <option selected value="">Please Select One</option>
+                                    <option value="Cigar Distributor">Cigar Distributor</option>
+                                    <option value="Cigar Manufacturer">Cigar Manufacturer</option>
+                                    <option value="Cigar Retailer">Cigar Retailer</option>
+                                    <option value="Importer">Importer</option>
+                                    <option value="Distiller">Distiller</option>
+                                    <option value="Winery">Winery</option>
+                                    <option value="Wine/Spirits Distributor">Wine/Spirits Distributor</option>
+                                    <option value="Beer Distributor">Beer Distributor</option>
+                                    <option value="Brewer">Brewer</option>
+                                    <option value="Restaurant">Restaurant</option>
+                                    <option value="Bar">Bar</option>
+                                    <option value="Hotel">Hotel</option>
+                                    <option value="Independent Retailer (Wine/Spirits/Beer)">Independent Retailer (Wine/Spirits/Beer)</option>
+                                    <option value="Chain Retailer (Wine/Spirits/Beer)">Chain Retailer (Wine/Spirits/Beer)</option>
+                                    <option value="Club (Private, Country)">Club (Private, Country)</option>
+                                    <option value="Duty Free Operator">Duty Free Operator</option>
+                                    <option value="Finance">Finance</option>
+                                    <option value="Media/PR">Media/PR</option>
+                                    <option value="consumer">Other</option>
+                                </select>
+                            </div><!-- /.form-group -->
+                        </div>
+                    </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-10">       
@@ -163,8 +163,8 @@
 
                 <div class="row">
                     <div class="col"><br />
-                        <p class="text-center"><input id="CI_submit" name="CI_submit" type="submit" value="SUBSCRIBE" class="btn btn-primary border-white" disabled></p>
-                        <p class="text-center text-white display-9">By clicking Submit, I will receive a free email subscription to <br class="d-none d-sm-block d-lg-none"><br class="d-sm-none d-lg-block"><em>selected Cigar newsletters</em> as well as special email promotions from <br class="d-none d-sm-block d-lg-none">Cigar Aficionado</p>
+                        <p class="text-center"><input id="CI_submit" name="CI_submit" type="submit" value="SUBSCRIBE" class="btn btn-primary border-white fs-5 px-md-5 fw-bold" disabled></p>
+                        <p class="text-center text-white display-9">By clicking Submit, I will receive a free email subscription to <br class="d-none d-sm-block d-lg-none"><br class="d-sm-none d-lg-block"><em>selected Cigar newsletters</em> as well as special email promotions from <br class="d-none d-sm-block d-lg-none">Cigar Aficionado. You may unsubscribe at any time.</p>
                     </div>
                 </div><!-- /.row -->
             </form>
