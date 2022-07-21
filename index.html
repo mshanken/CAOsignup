@@ -1,17 +1,17 @@
-            <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <meta name="title" content="Newsletter Sign up | Cigar Aficionado" />
-        <meta name="description" content="Free Cigar Watch newsletters and Cigar Ratings Flash." />
+        <meta name="description" content="Free Cigar Watch newsletters." />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Newsletter Sign up | Cigar Aficionado</title>
 
         <!-- Bootstrap -->
-        
-        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/signup-theme.css">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,132 +49,131 @@
         <!-- End UA code -->
         <script src="https://www.google.com/recaptcha/api.js"></script>
     </head>
-    <body class="bg-blue">
+    <body>
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMBRMD"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <div class="container-fuid">
-            <div class="row bg-orange">
-                <div class="col">
-                    <img src="/assets/images/newsletter-sign-up-01.png" class="img-fluid mx-auto d-block" alt="Cigar Aficionado - Subscribe to our Newsletters" />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 lead">
+                    <h1>Cigar Aficionado&#39;s<br /><span>CIGAR WATCH</span><br />A Free e-Newsletter from the Cigar Experts</h1>
+                    <!-- <img src="images/CA_NW_SubPage15-CAO.jpg" class="img-responsive center-block addmarginbottom" /> -->
                 </div>
             </div><!-- /.row -->
-            <div class="container">
             <form action="//portal.mshanken.com/wc/wc_verify.cfm" name="CI_subscribeForm" id="CI_subscribeForm" method="post">
                 <input type="hidden" name="CI_triggeredid" value="583561448">
-                <input type="hidden" name="CI_thankyou" value="//newsletters.cigaraficionado.com/thankyou.html">
-                <input type="hidden" name="CI_thankyou2" value="//newsletters.cigaraficionado.com/thankyou.html">
+                <input name="CI_thankyou" value="//newsletters.cigaraficionado.com/thankyou.html" type="hidden">
+                <input name="CI_thankyou2" value="//newsletters.cigaraficionado.com/thankyou.html" type="hidden">
                 <input type="hidden" name="CI_err" value="//portal.mshanken.com/wc/error.cfm">
                 <input type="hidden" name="CI_Action" value="sub">
-                <!-- <input type="hidden" name="CI_LID" value="2561596805,2561600817"> -->
+                <input type="hidden" name="CI_LID" value="2561596805,2561600817">
                 <input type="hidden" name="CI_MID" value="146485141">
                 <input type="hidden" name="CI_FID" value="8ccfcd52b13e586a">
 
                 <input type=hidden name="CI_custom5" id="CI_custom5" value="">
 
-                <div class="row mt-28">
-                    <div class="col-md-6 align-self-center">
-                        <img src="/assets/images/newsletter-sign-up-02.jpg" class="img-fluid ms-md-28 w-100 w-md-95" alt="Man holding a cigar and a drink">
-                    </div><!-- empaty column -->
-                    <fieldset class="col-md-6" id="newslettersoptions">
-                        <h1 class="text-white text-center mt-3 mt-md-0">SUBSCRIBE <br class="d-none d-md-block d-lg-none">TO <br class="d-md-none d-lg-block">OUR NEWSLETTERS</h1>
-                        <div class="form-check ps-2rem ps-md-6 pe-md-5 mt-28">
-                          <input class="form-check-input w-4 h-4 ms-n2rem mt-0" type="checkbox" name="CI_LID" value="2561596805,2561600817" id="2561596805,2561600817">
-                          <label class="text-white form-check-label display-7 fw-bold" for="cigarwatchcheck">
-                            CIGAR WATCH
-                          </label>
-                          <p class="text-white display-8">Our curated weekly newsletter about <br class="d-md-none d-lg-block">cigars and the good life.</p>
-                        </div>
-                        <div class="form-check ps-2rem ps-md-6 pe-md-5 mt-28">
-                          <input class="form-check-input w-4 h-4 ms-n2rem mt-0" type="checkbox" id="cigarreatingflashcheck" name="CI_LID" id="8109336243" value="8109336243">
-                          <label class="text-white form-check-label display-7 fw-bold" for="cigarreatingflashcheck">
-                            CIGAR RATINGS FLASH<br>
-                            <span class="text-pink display-8">NEW! Coming Fall 2022</span>
-                          </label>
-                          <p class="text-white display-8">Get the newest ratings straight from our <br class="d-md-none d-lg-block">tasting room to your inbox.</p>
-                        </div>
-                    </fieldset>
-                </div><!-- /.row -->
-
-                <div class="row justify-content-center mt-28">
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-12 col-md-4 mb-3">
-                                <label class="form-label text-white display-8" for="CI_email">EMAIL</label>
-                                <input type="email" name="CI_email" class="form-control" id="CI_email" placeholder="Email" maxlength="150" required />
-                            </div><!-- /.form-group -->
-                            <div class="col-12 col-md-4 mb-3">
-                                <label class=" form-label text-white display-8" for="CI_custom1">ZIP<span class="d-none d-md-inline"> CODE</span></label>
-                                <input type="text" name="CI_custom1" class="form-control" id="CI_custom1" placeholder="Zip/Postal Code" maxlength="12"  required />
-                            </div> <!-- /.form-group -->
-                            <div class="col-12 col-md-4 mb-3">
-                                <label for="Industry" class="form-label text-white display-8">INDUSTRY</label>
-                                <select name="CI_custom2" id="CI_custom2" class="ci_procenter_text_box ci_procenter_dropdown form-control" size="1">
-                                    <option selected value="">Please Select One</option>
-                                    <option value="Cigar Distributor">Cigar Distributor</option>
-                                    <option value="Cigar Manufacturer">Cigar Manufacturer</option>
-                                    <option value="Cigar Retailer">Cigar Retailer</option>
-                                    <option value="Importer">Importer</option>
-                                    <option value="Distiller">Distiller</option>
-                                    <option value="Winery">Winery</option>
-                                    <option value="Wine/Spirits Distributor">Wine/Spirits Distributor</option>
-                                    <option value="Beer Distributor">Beer Distributor</option>
-                                    <option value="Brewer">Brewer</option>
-                                    <option value="Restaurant">Restaurant</option>
-                                    <option value="Bar">Bar</option>
-                                    <option value="Hotel">Hotel</option>
-                                    <option value="Independent Retailer (Wine/Spirits/Beer)">Independent Retailer (Wine/Spirits/Beer)</option>
-                                    <option value="Chain Retailer (Wine/Spirits/Beer)">Chain Retailer (Wine/Spirits/Beer)</option>
-                                    <option value="Club (Private, Country)">Club (Private, Country)</option>
-                                    <option value="Duty Free Operator">Duty Free Operator</option>
-                                    <option value="Finance">Finance</option>
-                                    <option value="Media/PR">Media/PR</option>
-                                    <option value="consumer">Other</option>
-                                </select>
-                            </div><!-- /.form-group -->
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-10">       
-                        <div class="form-check ps-2rem mr-2 mb-28">
-                          <label class="form-check-label text-white"><br>
-                            <input class="form-check-input w-4 h-4 ms-n2rem mt-0" type="checkbox" name="CI_custom25" id="CI_custom25" value="N">
+                <div class="row row-one">
+                    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div><!-- empaty column -->
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                        <div class="form-group">
+                            <label class="control-label" for="CI_email">Email</label>
+                            <input type="email" name="CI_email" class="form-control required" id="CI_email" placeholder="Email" maxlength="150" />
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                            <span id="inputError2Status" class="sr-only">(error)</span>
+                        </div><!-- /.form-group -->
+                        <div class="form-group">
+                            <label class="control-label" for="CI_custom1">Zip/Postal Code</label>
+                            <input type="text" name="CI_custom1" class="form-control required" id="CI_custom1" placeholder="Zip/Postal Code" maxlength="12" />
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                            <span id="inputError2Status" class="sr-only">(error)</span>
+                        </div><!-- /.form-group -->
+                        <div class="form-group">
+                            <label for="Industry">Type of Industry (if applicable):</label>
+                            <select name="CI_custom2" id="CI_custom2" class="ci_procenter_text_box ci_procenter_dropdown form-control" size="1">
+                                <option selected value="">Please Select One</option>
+                                <option value="Cigar Distributor">Cigar Distributor</option>
+                                <option value="Cigar Manufacturer">Cigar Manufacturer</option>
+                                <option value="Cigar Retailer">Cigar Retailer</option>
+                                <option value="Importer">Importer</option>
+                                <option value="Distiller">Distiller</option>
+                                <option value="Winery">Winery</option>
+                                <option value="Wine/Spirits Distributor">Wine/Spirits Distributor</option>
+                                <option value="Beer Distributor">Beer Distributor</option>
+                                <option value="Brewer">Brewer</option>
+                                <option value="Restaurant">Restaurant</option>
+                                <option value="Bar">Bar</option>
+                                <option value="Hotel">Hotel</option>
+                                <option value="Independent Retailer (Wine/Spirits/Beer)">Independent Retailer (Wine/Spirits/Beer)</option>
+                                <option value="Chain Retailer (Wine/Spirits/Beer)">Chain Retailer (Wine/Spirits/Beer)</option>
+                                <option value="Club (Private, Country)">Club (Private, Country)</option>
+                                <option value="Duty Free Operator">Duty Free Operator</option>
+                                <option value="Finance">Finance</option>
+                                <option value="Media/PR">Media/PR</option>
+                                <option value="Other" id="othersel">Other</option>
+                            </select>
+                        </div><!-- /.form-group -->
+                        <div class="form-group hide">
+                            <label class="control-label" for="CI_custom7"><span class="small">Don’t see your industry? Please describe it below.</span></label>
+                            <input type="text" name="CI_custom7" id="CI_custom7" class="form-control" placeholder="Add industry type" />
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                            <span id="inputError2Status" class="sr-only">(error)</span>
+                        </div><!-- /.form-group -->
+                        <div class="form-check text-center">
+                          <label class="form-check-label"><br>
+                            <span class="checkbox-item glyphicon glyphicon-unchecked" aria-hidden="true" title="Are you EU subscriber?"></span><input class="form-check-input hidden" type="checkbox" name="CI_custom25" id="CI_custom25" value="N">
                             Please check here if you live in the <abbr title="European Union">EU</abbr>
                           </label>
                         </div><!-- /.form-group -->
-                        <div class="form-check ps-2rem mr-2 d-none" id="GDPRContent">
-                          <label class="form-check-label text-white">
-                            <input class="form-check-input w-4 h-4 ms-n2rem mt-0" type="checkbox" name="CI_proactive_agree_to_receive_emails" id="CI_proactive_agree_to_receive_emails" required>
+                        <div class="form-check hidden" id="GDPRContent">
+                          <label class="form-check-label">
+                            <span class="checkbox-item glyphicon glyphicon-unchecked" aria-hidden="true" title="Yes, please keep me updated with news, events, and offers."></span><input class="form-check-input hidden" type="checkbox" name="CI_proactive_agree_to_receive_emails" id="CI_proactive_agree_to_receive_emails">
                             Yes, please send me the newsletter and keep me updated with news, events and special offers, via email.
                           </label>
-                          <p class="text-white">You can unsubscribe at any time by clicking the unsubscribe link in the footer of emails you will receive from us. By submitting this form, you agree that we may process your information in accordance with our <a href="https://www.cigaraficionado.com/page/privacy-policy">Privacy Policy</a> and <a href="https://www.cigaraficionado.com/page/terms-of-service">Terms of Service</a>.</p>
-                          <p class="text-white">We use a third-party service as our email marketing platform. By submitting this form, you acknowledge that the information you provide will be transferred to our third-party service for processing in accordance with their <a href="https://criticalimpact.com/privacy-policy/" target="_blank">Privacy Policy</a> and <a href="https://criticalimpact.com/terms-of-use/" target="_blank">Terms</a>.</p>
+                          <p>You can unsubscribe at any time by clicking the unsubscribe link in the footer of emails you will receive from us. By submitting this form, you agree that we may process your information in accordance with our <a href="https://www.cigaraficionado.com/page/privacy-policy">Privacy Policy</a> and <a href="https://www.cigaraficionado.com/page/terms-of-service">Terms of Service</a>.</p>
+                          <p>We use a third-party service as our email marketing platform. By submitting this form, you acknowledge that the information you provide will be transferred to our third-party service for processing in accordance with their <a href="https://criticalimpact.com/privacy-policy/" target="_blank">Privacy Policy</a> and <a href="https://criticalimpact.com/terms-of-use/" target="_blank">Terms</a>.</p>
                         </div><!-- /.form-group -->
                     </div>
-                </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>
+                </div><!-- /.row -->
 
-
-                <div class="row justify-content-center">
-                    <div class="col text-center">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <br />
                         <div class="g-recaptcha" data-sitekey="6LcNcgsUAAAAAJrF307H_oCEzYub8hkGI5sWVxOB" data-callback="ciEnableSubmitButton" style="width:304px; margin: 10px auto 0;"></div>
+                        <!-- <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha"> -->
+                        <span id="inputError2Status" class="sr-only">(error)</span>
                     </div>
                 </div><!-- /.row -->
 
                 <div class="row">
-                    <div class="col"><br />
-                        <p class="text-center"><input id="CI_submit" name="CI_submit" type="submit" value="SUBSCRIBE" class="btn btn-primary border-white fs-5 px-md-5 fw-bold" disabled></p>
-                        <p class="text-center text-white display-9">By clicking Submit, I will receive a free email subscription to <br class="d-none d-sm-block d-lg-none"><br class="d-sm-none d-lg-block"><em>selected Cigar newsletters</em> as well as special email promotions from <br class="d-none d-sm-block d-lg-none">Cigar Aficionado. You may unsubscribe at any time.</p>
+                    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div><!-- empaty column -->
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8"><br />
+                        <p class="text-center"><input id="CI_submit" name="CI_submit" type="submit" value="Submit" class="btn btnbig" disabled></p>
+                        <p class="text-center">By clicking Submit, I will receive a free email subscription to Cigar Watch,<br/>as well as special email promotions from Cigar Aficionado.</p>
                     </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div><!-- empaty column -->
                 </div><!-- /.row -->
+
+                <div class="row row-two">
+                    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div><!-- empaty column -->
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                        <hr />
+                        <p class="text-center"><img src="images/CA_NewsletterSub.jpg" class="img-responsive center-block borderedimg" />
+                        <a href="images/CAWatch053116.pdf" class="btn" target="_blank">View Sample</a></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div><!-- empaty column -->
+                </div><!-- /.row -->
+
             </form>
-            </div><!-- /.container -->
-        </div><!-- /.container-fluid -->
+        </div><!-- /.container -->
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="/assets/runtime.js" defer></script>
-        <script src="/assets/js/scripts.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/signup-theme.js"></script>
         <script>
             var l_submit_confirmation_status = true;
             var l_recaptcha_status = false;
